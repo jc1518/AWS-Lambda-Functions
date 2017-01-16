@@ -1,0 +1,34 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:*:*:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:RebootInstances"
+            ],
+            "Resource": [
+                "arn:aws:ec2:ap-southeast-2:XXXXXXXXXXXX:instance/i-a2XXXXXX",
+                "arn:aws:ec2:ap-southeast-2:XXXXXXXXXXXX:instance/i-34XXXXXX",
+                "arn:aws:ec2:ap-southeast-2:XXXXXXXXXXXX:instance/i-f8XXXXXX"
+            ]
+        }
+    ]
+}
