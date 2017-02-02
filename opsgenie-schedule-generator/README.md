@@ -18,3 +18,5 @@ python oncall.py
 ```
 ## Lambda
 AWS Lambda function is also available. Set it up in AWS with AWS API gateway. Then you can have a RESTful AVPI for your roster schedule!
+
+![api](api.png)
